@@ -7,7 +7,7 @@ const IUInicio = () => {
       <section className="form-sesion text-center py-5 ">
         <article>
           <Logo />
-          <h1 className="h3 mb-3">Inicio de Sesion</h1>
+          <h1 className="h3 mb-3">Inicio de Sesion Con Deploy Automatico</h1>
           <FormInicio />
         </article>
       </section>
