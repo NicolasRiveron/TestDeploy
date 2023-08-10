@@ -1,0 +1,240 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+*:hover, .transition{
+  transition: all 1s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#dashboard {
+  background-image: url("../public/img/FondoDashboardNegro.jpg");
+  background-size: cover;
+  min-height: 100%;
+  padding-top: 140px;
+  background-position: 0 -100px;
+}
+
+#dashboard,
+.sesion {
+  background-attachment: fixed;
+}
+
+#notFound {
+  color: #d3d1d1;
+}
+
+main,
+.sesion {
+  height: 100%;
+}
+
+.sesion {
+  background-image: url("../public/img/FondoSesion.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sesion .form-sesion {
+  height: 100%;
+  width: 36%;
+  background-color: #f05521e7;
+  padding-inline: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.sesion .form-floating:focus-within {
+  z-index: 2;
+}
+
+.sesion .form-floating:focus {
+  background-color: #2A417E;
+}
+
+.sesion select {
+  margin-bottom: 1%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.sesion select,
+.sesion .form-control {
+  border-color: #112149;
+  background-color: #112149;
+}
+
+.sesion form div label,
+.sesion select,
+.sesion .form-control {
+  color: #f05521e7;
+}
+
+.sesion .href {
+  border-style: hidden;
+  background-color: #f0552100;
+}
+
+.sesion .href:hover {
+  border-radius: 3rem;
+}
+
+.sesion .href:hover,
+.sesion .form-floating input:hover,
+.sesion select:hover,
+.sesion select:focus {
+  background-color: #2A417E;
+}
+
+#dashboard .backgroundHeader {
+  background-color: rgba(77, 77, 77, 0.817);
+}
+
+#dashboard h6 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+}
+
+.underLine {
+  border-bottom: 2px dashed white;
+  width: 55%;
+}
+
+#dashboard .agregarTransaccion .form-group,
+#dashboard .card-body .form-group {
+  margin-block: 3%;
+  margin-inline: auto;
+  max-width: 70%;
+  border-radius: 1rem;
+}
+
+#dashboard .agregarTransaccion .nuevaTrn #dashboard .card-body .nuevaTrn {
+  border-radius: 5rem;
+}
+
+#dashboard .agregarTransaccion .form-group input[type="button"],
+#dashboard .card-body .form-group input[type="button"] {
+  border: 3px inset transparent;
+  border-radius: 5rem;
+}
+
+#dashboard .agregarTransaccion .form-group input[type="button"]:hover,
+#dashboard .card-body .form-group input[type="button"]:hover {
+  border: 3px outset white;
+  border-radius: 5rem;
+}
+
+#dashboard .agregarTransaccion .form-group select,
+#dashboard .card-body .form-group select,
+#dashboard .agregarTransaccion .form-group input[type="number"] {
+  border: 3px inset white;
+}
+
+#montoInversiones {
+  float: right;
+}
+
+#iaOperaciones {
+  float: right;
+}
+
+#agregarTransaccion {
+  float: left;
+}
+
+#iaOperaciones .card-body .vender {
+  border-left: 10px solid black;
+}
+
+#iaOperaciones .card-body .comprar {
+  border-left: 10px solid red;
+}
+
+#montoInversiones .card-body h1 {
+
+  text-shadow:
+    0 -30px 50px black,
+    0 30px 50px black,
+    -50px 0 50px black,
+    50px 0 50px black;
+
+  color: rgb(0, 0, 0)
+}
+
+header nav ul .link {
+  border: 3px solid transparent;
+  background-color: transparent;
+  border-radius: 3rem;
+  margin-block: auto;
+}
+
+header nav ul .link:hover {
+  border: 3px solid rgb(72, 72, 72);
+  border-bottom: 3px dashed rgb(255, 255, 255);
+  background-color: rgb(72, 72, 72);
+  border-radius: 3rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 2px 100px black;
+}
+
+#logout {
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+  border-radius: 10px;
+  background-color: rgba(72, 72, 72, 0.3);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#logout input[type="button"] {
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+}
+
+#logout:hover {
+  background-color: rgba(72, 72, 72, 0.8);
+  color: rgb(0, 0, 0);
+  box-shadow: 0px 0px 30px black;
+}
+
+@media (min-width: 992px) {
+  #dashboard {
+    padding-top: 180px;
+  }
+
+  header nav ul .link a {
+    text-shadow: 0 0 58px white;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .sesion .form-sesion {
+    height: 100%;
+    width: 50%;
+    transition-property: all;
+    transition-duration: 2s;
+  }
+}
+
+@media (max-width: 424px) {
+  .sesion .form-sesion {
+    height: 100%;
+    width: 100%;
+    transition-property: all;
+    transition-duration: 2s;
+  }
+}
